@@ -10,8 +10,9 @@ footer {
     align-items: first baseline;
     justify-content: space-evenly;
 
-    .developer-name {
-        font-size: 2rem;
+    .developer-name.footer {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        z-index: 999;
     }
 
     h3 {

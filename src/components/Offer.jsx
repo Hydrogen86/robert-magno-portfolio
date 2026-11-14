@@ -19,7 +19,7 @@ const Offer = () => {
 
             <ScrollAnimation className='zoom-in'>
             <div className="offer-card">
-                <FontAwesomeIcon icon={faReact} className='icon'></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faReact} className='icon front-end'></FontAwesomeIcon>
 
                 <h2>FRONTEND DEVELOPMENT</h2>
                 <p>
@@ -30,7 +30,7 @@ const Offer = () => {
 
             <ScrollAnimation className='zoom-in'>
             <div className="offer-card">
-                <FontAwesomeIcon icon={faCode} className='icon'></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faCode} className='icon back-end'></FontAwesomeIcon>
 
                 <h2>BACK DEVELOPMENT</h2>
                 <p>
@@ -41,7 +41,7 @@ const Offer = () => {
 
             <ScrollAnimation className='zoom-in'>
             <div className="offer-card">
-                <FontAwesomeIcon icon={faMobileAlt} className='icon'></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faMobileAlt} className='icon mobile'></FontAwesomeIcon>
 
                 <h2>MOBILE DEVELOPMENT</h2>
                 <p>
@@ -52,7 +52,7 @@ const Offer = () => {
             
             <ScrollAnimation className='zoom-in'>
             <div className="offer-card">
-                <FontAwesomeIcon icon={faFigma} className='icon'></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faFigma} className='icon design'></FontAwesomeIcon>
 
                 <h2>UI/UX DESIGN</h2>
                 <p>

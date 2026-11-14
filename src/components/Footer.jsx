@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <footer>
         <div className="dev-name">
-          <span className='developer-name'>{ userData.firstName }.</span>
+          <span className='developer-name footer'>{ userData.firstName }.</span>
           <span>
             Designing and developing digital experiences that make an impact.
           </span>

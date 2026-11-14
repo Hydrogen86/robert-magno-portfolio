@@ -53,14 +53,75 @@
 .offer-card .icon {
     font-size: clamp(2rem, 5vw, 3rem);
     color: var(--main-color);
+    transition: transform .3s ease;
 }
 .offer-container:hover> :not(:hover) {
     transform: scale(0.9);
 }
 .offer-card:hover {
     transform: scale(1.1);
+
+    .icon.front-end {
+        color: #61DAFB;
+        animation: rotateIcon 2s linear infinite;
+    }
+    .icon.back-end {
+        color: #ff2b23;
+        animation: vibrate 2s linear infinite;
+    }
+    .icon.mobile {
+        color: #1818ff;
+        animation: pulse 2s linear infinite;
+    }
+    .icon.design {
+        color: #d914d9;
+        animation: flip 2s linear infinite;
+    }
+}
+/* 
+    Icon Animations
+*/
+@keyframes rotateIcon {
+    from {
+        transform: rotate(0deg) scale(1.1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.1);
+    }
+}
+@keyframes vibrate {
+    0%   { transform: translate(0) scale(1.1); }
+    20%  { transform: translate(-2px, 2px) scale(1.1); }
+    40%  { transform: translate(-2px, -2px) scale(1.1); }
+    60%  { transform: translate(2px, 2px) scale(1.1); }
+    80%  { transform: translate(2px, -2px) scale(1.1); }
+    100% { transform: translate(0) scale(1.1); }
 }
 
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: perspective(400px) rotateY(0);
+    }
+    50% {
+        transform: perspective(400px) rotateY(180deg);
+    }
+    100% {
+        transform: perspective(400px) rotateY(360deg);
+    }
+}
+
+/* 
+    Resposive design
+*/
 @media (max-width: 770px) {
     .offer-section{
         padding: 1.5rem 1rem;
