@@ -68,6 +68,7 @@
     width: clamp(300px, 30vw, 500px);
     overflow: hidden;
     animation: heroSlideRight 0.9s ease-out both;
+    filter: drop-shadow(10px 10px 20px #0000009f);
 }
 @keyframes heroSlideRight {
     from {
